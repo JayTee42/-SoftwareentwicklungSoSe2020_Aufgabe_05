@@ -94,3 +94,5 @@ Testen Sie Ihre Tierklassen in der Main -Methode.
 ## 3. UML Darstellung zu Aufgabe 2 
 
 Generieren Sie wiederum ein UML Diagramm der Lösung mit dem Methoden aus Aufgabe 2. Vergleichen Sie das Resultat mit Ihrem ursprünglichen Entwurf. An welchen Stellen haben Sie nachjustiert?
+
+Some changes lol
