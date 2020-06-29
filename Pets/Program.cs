@@ -55,16 +55,16 @@ namespace Animals
                     Console.WriteLine("{0} is not strokeable :( so sad", pet);
                 }
 
-                /* if (pet is IStrokeable)
-                 * {
-                 *    IStrokeable strokeablePet = (IStrokeable)pet;
-                 *    strokeablePet.Stroke();
-                 * }
-                 * else
-                 * {
-                 *    ...
-                 * }
-                 */
+                // if (pet is IStrokeable)
+                // {
+                //    IStrokeable strokeablePet = (IStrokeable)pet;
+                //    strokeablePet.Stroke();
+                // }
+                // else
+                // {
+                //    ...
+                // }
+                //
             }
         }
     }
