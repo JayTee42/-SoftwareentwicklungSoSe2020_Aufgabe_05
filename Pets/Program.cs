@@ -52,7 +52,7 @@ namespace Animals
                 }
                 else
                 {
-                    Console.WriteLine("{0} is not strokeable :( so sad", pet);
+                    Console.WriteLine("{0} is not strokeable, so sad!", pet);
                 }
 
                 // if (pet is IStrokeable)
