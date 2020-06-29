@@ -1,0 +1,60 @@
+@startuml
+interface IStrokeable {
+    Stroke() : void
+}
+class Guppy {
+    + <<override>> Swim() : void
+    + Guppy(newName:string, newOwner:string)
+    + Guppy(newName:string)
+}
+Fish <|-- Guppy
+class Bunny {
+    + <<override>> Attend() : void
+    + <<override>> Move() : void
+    + Bunny(newName:string, newOwner:string)
+    + Bunny(newName:string)
+}
+Mammal <|-- Bunny
+abstract class Mammal {
+    + {abstract} Move() : void
+    + <<virtual>> Stroke() : void
+    + Mammal(newName:string, newOwner:string)
+    + Mammal(newName:string)
+}
+Pet <|-- Mammal
+IStrokeable <|-- Mammal
+class Cat {
+    + <<override>> Attend() : void
+    + <<override>> Move() : void
+    + <<override>> Stroke() : void
+    + Cat(newName:string)
+}
+Mammal <|-- Cat
+Cat o-> "CatRandom" Random
+class Program {
+    {static} Main(args:string[]) : void
+}
+class Goldfish {
+    + <<override>> Swim() : void
+    + Stroke() : void
+    + Goldfish(newName:string, newOwner:string)
+    + Goldfish(newName:string)
+}
+Fish <|-- Goldfish
+IStrokeable <|-- Goldfish
+abstract class Pet {
+    + Name : string <<get>> <<set>>
+    + Owner : string <<get>>
+    + {abstract} Attend() : void
+    + Pet(newName:string, newOwner:string)
+    + Pet(newName:string)
+    + <<override>> ToString() : string
+}
+abstract class Fish {
+    + {abstract} Swim() : void
+    + <<override>> Attend() : void
+    + Fish(newName:string, newOwner:string)
+    + Fish(newName:string)
+}
+Pet <|-- Fish
+@enduml
